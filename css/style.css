@@ -7,6 +7,7 @@ html {
     display: flex;
     justify-content: center;
     background: rgba(153, 1, 255, 0.705);
+    border: solid 1px black;
 }
 .navbar a{
     width: 200px;
@@ -15,12 +16,27 @@ html {
     font-size: 34px;
     text-decoration: none;
     background: rgb(153, 1, 255);
-    color: white;
+    color: black;
+    text-shadow: 0px 0px 2px white;
+}
+.navbar a:first-child {background-image: linear-gradient(to right, violet, pink);}
+.navbar a:nth-child(even) {background-color: pink;}
+.navbar a:nth-child(odd) {background-color: pink;}
+.navbar a:last-child {background-image: linear-gradient(to right, pink, violet);}
+.navbar a:hover {
+    box-shadow: 0px 0px 5px orangered;
+    text-shadow: 0px 0px 2px purple;
 }
 .return {
     position: absolute;
     text-decoration: none;
-    
+    font-size: 31px;
+    background-color: orangered;
+    color: white;
+}
+.return:hover {
+    background-color: yellow;
+    color: black;
 }
 .welcome {
     display: flex;
