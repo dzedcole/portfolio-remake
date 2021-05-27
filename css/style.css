@@ -51,14 +51,28 @@ html {
     color: black;
     text-shadow: 2px 2px purple;
     border: solid 1px black;
-    background: rgba(1, 39, 255, 0.226);
-
-    
+    background: rgba(1, 39, 255, 0.226);  
+    animation: bg-pulse 4s infinite forwards;  
+    height: 55px; 
+}
+.home-underbar {
+    display: flex;
+    height: 55px;
+    margin-top: 50px;
+    color: rgba(1, 39, 255, 0.226);
+    border: solid 1px black;
+    background: rgba(1, 39, 255, 0.226);  
+    animation: bg-pulse2 4s infinite forwards;   
 }
 @keyframes bg-pulse {
-    0% {box-shadow: 0px -10px 10px rgba(1, 39, 255, 0.226);}
-    50% {box-shadow: 0px -30px 10px rgba(1, 39, 255, 0.226);}
-    100% {box-shadow: 0px -10px 10px rgba(1, 39, 255, 0.226);}
+    0% {box-shadow: 0px -8px 10px rgba(1, 39, 255, 0.226);}
+    50% {box-shadow: 0px -20px 10px rgba(1, 39, 255, 0.226);}
+    100% {box-shadow: 0px -8px 10px rgba(1, 39, 255, 0.226);}
+}
+@keyframes bg-pulse2 {
+    0% {box-shadow: 0px 8px 10px rgba(1, 39, 255, 0.226);}
+    50% {box-shadow: 0px 20px 10px rgba(1, 39, 255, 0.226);}
+    100% {box-shadow: 0px 8px 10px rgba(1, 39, 255, 0.226);}
 }
 .dark-theme {
     background: #00bba2;
@@ -70,16 +84,12 @@ html {
 .home-bg {
     margin-left: 0px;
     margin-right: 0px;
-    background-image: linear-gradient(to right, #f68fff, #7eb8ff, #fbcdff, #d7e9ff);
-    background-size: 200% 200%;
-    animation: gradient 15s ease infinite;
-    height: 480px;
-    animation: bg-pulse 4s infinite forwards;
+    background-image: linear-gradient(to right, #7eb8ff, #fcd9ff, #7eb8ff);
+    height: 548px;
 }
 .home-nav {
     display: flex;
     justify-content: center;
-
 }
 .home-nav a{
 width: 300px;
@@ -125,12 +135,6 @@ border: solid 1px orangered;
 
 100% {transform: rotateX(5deg);}
 }
-@keyframes gradient {
-	0% {background-position: 0% 50%;}
-	50% {background-position: 100% 50%;}
-	100% {background-position: 0% 50%;}
-}
-
 /* PROJECTEN */
 
 .project {
