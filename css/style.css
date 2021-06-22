@@ -4,7 +4,6 @@
 }
 html {
    font-family: 'Noto Sans KR', sans-serif;
-   background: url(../img/bg.png);
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -181,16 +180,15 @@ border: solid 1px orangered;
 }
 }
 
-/* Projecten */
-
 .main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 20%;
+    margin-left: 10%;
     background: white;
-    width: 60%;
+    width: 80%;
     border: solid 1px black;
+    box-shadow: 0px 0px 4px black;
 }
 
 /* CALCULATOR */
