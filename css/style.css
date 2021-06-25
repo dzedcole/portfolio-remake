@@ -4,14 +4,15 @@
 }
 html {
    font-family: 'Noto Sans KR', sans-serif;
-   background: lightcyan;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .navbar {
     display: flex;
     justify-content: center;
-    background: rgba(238, 130, 238, 0.8);
+    background: rgba(148, 0, 211, 1);
     border: solid 1px black;
-    box-shadow: 0px 2px 2px rgba(148, 0, 211, 0.5);
+    box-shadow: 0px 2px 2px black;
 }
 .navbar a{
     width: 200px;
@@ -179,58 +180,15 @@ border: solid 1px orangered;
 }
 }
 
-
-/* Projecten */
-
 .main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 20%;
+    margin-left: 10%;
     background: white;
-    width: 60%;
+    width: 80%;
     border: solid 1px black;
-}
-.main div {
-    width: 200px;
-    height: 200px;
-    border: solid 1px black;
-    border-radius: 10%;
-    background-color: lightblue;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-decoration: none;
-    color: black;
     box-shadow: 0px 0px 4px black;
-}
-.main h3 {
-    text-align: center;
-}
-.main button {
-    width: 150px;
-    height: 30px;
-    font-size: 16px;
-    margin-left: 25px;
-    background: cyan;
-    border: solid 1px purple;
-    border-radius: 30%;
-    text-decoration: none;
-    color: black;
-}
-.main a {
-    text-decoration: none;
-    color: black;
-}
-.no-project button {
-    height: unset;
-    border: dashed 2px purple;
-    border-radius: 0%;
-}
-.wip button {
-    height: unset;
-    border: dashed 2px purple;
-    border-radius: 0%;
 }
 
 /* CALCULATOR */
