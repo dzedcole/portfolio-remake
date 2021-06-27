@@ -20,14 +20,13 @@ html {
     text-align: center;
     font-size: 34px;
     text-decoration: none;
-    background: rgb(153, 1, 255);
     color: black;
     text-shadow: 0px 0px 2px white;
 }
-.navbar a:first-child {background-image: linear-gradient(to right, violet, pink);}
+.navbar a:first-of-type {background-image: linear-gradient(to right, violet, pink);}
 .navbar a:nth-child(even) {background-color: pink;}
 .navbar a:nth-child(odd) {background-color: pink;}
-.navbar a:last-child {background-image: linear-gradient(to right, pink, violet);}
+.navbar a:last-of-type {background-image: linear-gradient(to right, pink, violet);}
 .navbar a:hover {
     box-shadow: 0px 0px 5px orangered;
     text-shadow: 0px 0px 1px purple;
@@ -189,6 +188,45 @@ border: solid 1px orangered;
     width: 80%;
     border: solid 1px black;
     box-shadow: 0px 0px 4px black;
+}
+
+.dark-mode div {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: solid 1px white;
+    box-shadow: 0px 0px 4px white;
+}
+.dark-mode {
+    background: rgb(53, 53, 53);
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+}
+.dark-mode h3{
+    color: white;
+}
+.nav-dark-mode {
+    background: rgb(36, 36, 36);
+    border-bottom: solid 1px white;
+}
+.nav-dark-mode button {
+    background: gray;
+    border: solid 1px white;
+    color: white;
+}
+.nav-dark-mode a{
+    color: white;
+    border: solid 1px white;
+}
+
+.nav-dark-mode a:first-of-type {background-image: linear-gradient(to right, rgb(54, 54, 54), gray);}
+.nav-dark-mode a:nth-child(even) {background-color: gray;}
+.nav-dark-mode a:nth-child(odd) {background-color: gray;}
+.nav-dark-mode a:last-of-type {background-image: linear-gradient(to right, gray, rgb(54, 54, 54));}
+.nav-dark-mode a:hover {
+    box-shadow: 0px 0px 5px orangered;
+    text-shadow: 0px 0px 1px purple;
+    border: solid 1px orangered;
 }
 
 /* CALCULATOR */
