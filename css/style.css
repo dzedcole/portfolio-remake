@@ -205,6 +205,9 @@ border: solid 1px orangered;
 .dark-mode h3{
     color: white;
 }
+.dark-mode button, .dark-mode a {
+    color: white;
+}
 .nav-dark-mode {
     background: rgb(36, 36, 36);
     border-bottom: solid 1px white;

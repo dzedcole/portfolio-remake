@@ -77,12 +77,12 @@ function themeSwitch() {
     }
 }
     else {            
-            document.querySelector("html").style.background = "url(../img/bg-night.png)";
+            document.querySelector("html").style.background = "url(../img/bg-day.png)";
             document.querySelector("html").style.backgroundRepeat = "no-repeat";
             document.querySelector("html").style.backgroundSize = "cover";
             document.querySelector("html").style.height = "100%";
 
-            currentTheme = "dark-mode";
+            currentTheme = "main";
             localStorage.setItem("current-theme", currentTheme);
 
             console.log(currentTheme)
