@@ -35,6 +35,7 @@ function themeSwitch() {
     document.querySelector("html").style.background = "url(../img/bg-night.png)";
     document.querySelector("html").style.backgroundRepeat = "no-repeat";
     document.querySelector("html").style.backgroundSize = "cover";
+    document.querySelector("html").style.height = "100%";
 
     currentTheme = "dark-mode";
     localStorage.clear()
@@ -49,6 +50,7 @@ function themeSwitch() {
         document.querySelector("html").style.background = "url(../img/bg-day.png)";
         document.querySelector("html").style.backgroundRepeat = "no-repeat";
         document.querySelector("html").style.backgroundSize = "cover";
+        document.querySelector("html").style.height = "100%";
 
         currentTheme = "main";
         localStorage.clear()
@@ -67,6 +69,7 @@ function themeSwitch() {
             document.querySelector("html").style.background = "url(../img/bg-day.png)";
             document.querySelector("html").style.backgroundRepeat = "no-repeat";
             document.querySelector("html").style.backgroundSize = "cover";
+            document.querySelector("html").style.height = "100%";
 
             currentTheme = "main";
             localStorage.setItem("current-theme", currentTheme);
@@ -77,10 +80,16 @@ function themeSwitch() {
             document.querySelector("html").style.background = "url(../img/bg-night.png)";
             document.querySelector("html").style.backgroundRepeat = "no-repeat";
             document.querySelector("html").style.backgroundSize = "cover";
+            document.querySelector("html").style.height = "100%";
 
             currentTheme = "dark-mode";
             localStorage.setItem("current-theme", currentTheme);
+
             console.log(currentTheme)
+    }
+    function changeToDarkMode() {
+        document.querySelector(".main").className = "main dark-mode";
+            document.querySelector(".nav").className = "navbar nav-dark-mode";
     }
 
 localStorage.clear()
